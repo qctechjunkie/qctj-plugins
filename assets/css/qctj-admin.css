@@ -1,0 +1,476 @@
+/**
+ * QCTJ Admin CSS
+ *
+ * @package     QCTJ
+ * @subpackage  Admin CSS
+ * @copyright   Copyright (c) 2021, Joe Miller
+ * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
+*/
+
+.qctj-hidden {
+	display: none;
+}
+.qctj-clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	text-indent: -9999px;
+	visibility: hidden;
+}
+.qctj-wrap a {
+	text-decoration: none;
+}
+a.qctj-delete {
+	color: #a00;
+}
+a.qctj-delete:hover {
+	color: #f00;
+}
+
+/* General Settings Styles
+-------------------------------------------------------------- */
+
+/* Tooltips */
+.qctj-help-tip {
+	cursor: help;
+}
+
+.qctj-ui-tooltip {
+	position: absolute;
+	background: #333 !important;
+	border-width: 1px !important;
+	border-radius: 3px !important;
+	box-shadow: 1px 1px 2px 1px rgba(214,214,214,0.5) !important;
+	color: #dedede !important;
+	max-width: 300px !important;
+	padding: 7px !important;
+	text-rendering: optimizeLegibility;
+	text-shadow: none !important;
+	z-index: 9999 !important;
+}
+
+/* Settings page styles
+-------------------------------------------------------------- */
+
+@-webkit-keyframes qctj-spinning {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes qctj-spinning {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.wrap-licenses .form-table,
+.wrap-licenses thead,
+.wrap-licenses tbody,
+.wrap-licenses tfoot,
+.wrap-licenses tr,
+.wrap-licenses td,
+.wrap-licenses th,
+.wrap-licenses caption {
+	display: block;
+}
+.wrap-licenses .form-table tr {
+	float: left;
+	margin: 0 15px 15px 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 30.5%;
+	max-width: 350px;
+	padding: 14px;
+	min-height: 220px;
+	position: relative;
+	box-sizing: border-box;
+}
+.wrap-licenses .form-table th {
+	background: #f9f9f9;
+	padding: 14px;
+	border-bottom: 1px solid #ccc;
+	margin: -14px -14px 20px;
+	width: 100%;
+}
+.wrap-licenses .form-table td {
+	padding: 0;
+}
+.wrap-licenses td input.regular-text {
+	margin: 0 0 8px;
+	width: 100%;
+}
+.wrap-licenses .qctj-license-data[class*="qctj-license-"] {
+	position: absolute;
+	background: #fafafa;
+	padding: 14px;
+	border-top: 1px solid #eee;
+	margin: 20px -14px -14px;
+	min-height: 67px;
+	width: 100%;
+	bottom: 14px;
+	box-sizing: border-box;
+}
+.wrap-licenses .qctj-license-data[class*="qctj-license-"] a {
+	color: #444;
+}
+.wrap-licenses .qctj-license-data[class*="qctj-license-"] a:hover {
+	text-decoration: none;
+}
+.wrap-licenses .qctj-license-data.license-expires-soon-notice {
+	background-color: #00a0d2;
+	color: #fff;
+	border-color: #00a0d2;
+}
+.wrap-licenses .qctj-license-data.qctj-license-expired {
+	background-color: #e24e4e;
+	color: #fff;
+	border-color: #e24e4e;
+}
+.wrap-licenses .qctj-license-data.qctj-license-error,
+.wrap-licenses .qctj-license-data.qctj-license-missing,
+.wrap-licenses .qctj-license-data.qctj-license-invalid,
+.wrap-licenses .qctj-license-data.qctj-license-site_inactive,
+.wrap-licenses .qctj-license-data.qctj-license-item_name_mismatch {
+	background-color: #ffebcd;
+	border-color: #ffebcd;
+}
+.wrap-licenses .qctj-license-data p {
+	font-size: 13px;
+	margin-top: 0;
+}
+.wrap-licenses .qctj-license-data.license-expires-soon-notice a,
+.wrap-licenses .qctj-license-data.qctj-license-expired a {
+	color: #fff;
+}
+.wrap-licenses .qctj-license-data.license-expires-soon-notice a:hover,
+.wrap-licenses .qctj-license-data.qctj-license-expired a:hover {
+	text-decoration: none;
+}
+.wrap-licenses p.submit {
+	clear: both;
+}
+
+/* System Info page styles
+-------------------------------------------------------------- */
+
+#system-info-textarea {
+	background: none;
+	font-family: Menlo, Monaco, monospace;
+	display: block;
+	overflow: auto;
+	white-space: pre;
+	width: 800px;
+	height: 400px;
+}
+
+/* Button styles
+-------------------------------------------------------------- */
+
+#TB_window #qctj-add-download:hover,
+#TB_window #qctj-add-download:active,
+#TB_window #qctj-add-download:focus {
+	color: #fff;
+}
+
+/* General styles
+-------------------------------------------------------------- */
+
+.qctj-select-chosen {
+	width: 100%;
+	max-width: 300px;
+}
+.chosen-container-multi .chosen-choices {
+	background-image: none;
+	border-color: #dfdfdf;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.chosen-container-multi .chosen-choices input {
+	border-color: #dfdfdf;
+	height:27px!important;
+	margin:2px;
+}
+.chosen-container .chosen-drop {
+	border-color: #aaa;
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.chosen-container .search-field {
+	float: none!important;
+}
+.chosen-container .search-field input {
+	width: 90%!important;
+}
+.chosen-container-active .chosen-choices {
+	border-color: #aaa;
+	-webkit-border-top-left-radius: 3px;
+	border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.download_page_qctj-tools .tablenav .actions {
+	overflow: visible;
+}
+.qctj_user_search_wrap {
+	position: relative;
+	overflow: visible;
+}
+.qctj_user_search_results {
+	position: absolute;
+	left: 0;
+	top: 27px;
+}
+.qctj_user_search_results a.qctj-ajax-user-cancel {
+	position: absolute;
+	right: 6px;
+	top: 2px;
+}
+.qctj_user_search_results ul {
+	background: #f0f0f0;
+	border: 1px solid #dfdfdf;
+	overflow-y: scroll;
+	padding: 10px 10px 4px;
+	margin: 0;
+	max-height: 200px;
+	width: 300px;
+}
+
+.wp-list-table .type-download .row-actions {
+	color: #999;
+}
+
+@media screen and ( max-width: 1100px ) {
+
+	.qctj-mix-chart {
+		display: block;
+		width: 100%;
+	}
+
+	.wrap-licenses .form-table tr {
+		width: 46%;
+		max-width: none;
+		min-height: 230px;
+	}
+
+}
+
+@media screen and ( max-width: 782px ) {
+
+	.post-type-download .nav-tab-wrapper a {
+		font-size: 70%;
+		padding: 2px 4px;
+	}
+	.download_page_qctj-tools .apikeys .column-user {
+		width: 80px;
+	}
+	.license-lifetime-notice,
+	.license-expiration-date-notice,
+	.license-null {
+		padding-left: 0;
+	}
+	[class^="license-"] input[type="text"] {
+		margin-bottom: 3px;
+	}
+
+}
+
+@media screen and ( max-width: 600px ) {
+	.wrap-licenses .form-table tr {
+		width: 100%;
+		min-height: 230px;
+	}
+
+	#qctj-edit-order-form input.large-text {
+		width: 100%;
+	}
+}
+
+/* Promotional element styles
+-------------------------------------------------------------- */
+
+/* Settings sidebar */
+.qctj-settings-sidebar {
+	padding-top: 27px;
+}
+
+.qctj-settings-sidebar-content {
+	background-color: #fff;
+	text-align: center;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	max-width: 300px;
+}
+
+.qctj-settings-sidebar-content p {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+/* Settings sidebar header section */
+.qctj-sidebar-header-section {
+	background-color: #35495c;
+	line-height: 1;
+	padding: 26px 20px 24px;
+	border-bottom: 3px dashed #fafafa;
+}
+
+/* Settings sidebar description section */
+.qctj-sidebar-description-section {
+	background-color: #fafafa;
+	padding: 16px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.qctj-sidebar-description-section .qctj-sidebar-description {
+	margin: 0;
+}
+
+/* Settings sidebar coupon section */
+.qctj-sidebar-coupon-section {
+	font-size: 14px;
+	padding: 16px 20px;
+}
+
+.qctj-sidebar-coupon-section label {
+	display: block;
+	line-height: 1.4;
+	margin-bottom: 6px;
+}
+
+.qctj-sidebar-coupon-section label strong {
+	color: #253b51;
+	font-weight: 700;
+}
+
+.qctj-sidebar-coupon-section input {
+	background: #f4f7fa;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	padding: 10px;
+	border: 2px dashed #2794da;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	box-shadow: none;
+	width: 100%;
+}
+
+.qctj-sidebar-coupon-section input:focus {
+	border: 2px dashed #2794da;
+	box-shadow: none;
+}
+
+.qctj-settings-sidebar-content .qctj-coupon-note {
+	color: #6c7883;
+	font-size: 13px;
+	font-style: italic;
+	margin: 0;
+}
+
+.qctj-settings-sidebar-content .qctj-coupon-note a {
+	color: #253b51;
+}
+
+.qctj-settings-sidebar-content .qctj-coupon-note a:hover {
+	text-decoration: none;
+}
+
+/* Settings sidebar footer section */
+.qctj-sidebar-footer-section {
+	background-color: #fafafa;
+	padding: 16px 20px;
+	border-top: 1px solid #ddd;
+}
+
+.qctj-sidebar-footer-section .qctj-cta-button {
+	display: block;
+	background-color: #2794da;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 17px 10px;
+	border: none;
+	border-radius: 4px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	transition: background-color .2s;
+}
+
+.qctj-sidebar-footer-section .qctj-cta-button:hover {
+	background-color: #2386c5;
+}
+
+/* Settings sidebar responsive behavior */
+@media all and ( min-width: 1080px ) {
+
+	.qctj-has-sidebar .qctj-settings-content {
+		float: left;
+		width: 67%;
+	}
+
+	.qctj-has-sidebar .qctj-settings-sidebar {
+		float: right;
+		width: 31%;
+	}
+}
+
+@media all and ( min-width: 1240px ) {
+
+	.qctj-has-sidebar .qctj-settings-content {
+		width: 74%;
+	}
+
+	.qctj-has-sidebar .qctj-settings-sidebar {
+		width: 23%;
+	}
+}
+
+/* Settings - Move sidebar below content only on Taxes tab */
+.taxes-tab .qctj-has-sidebar .qctj-settings-content,
+.taxes-tab .qctj-has-sidebar .qctj-settings-sidebar {
+	float: none;
+	width: 100%;
+}
+
+/* Extensions (add-ons) page promotional element */
+.bfcm-promo-img-container {
+	background-color: #35495c;
+	width: 100%;
+	height: 160px;
+}
+
+.bfcm-code {
+	color: #2794da;
+	font-weight: 700;
+}
+
+.sale-ends {
+	position: absolute;
+	bottom: 9px;
+	right: 14px;
+	display: inline-block;
+	color: #6c7883;
+	font-size: 12px;
+	text-align: right;
+	font-style: italic;
+	width: 150px;
+}
