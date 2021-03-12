@@ -4,7 +4,7 @@
 
 [Easy Digital Downloads](https://qctechjunkie.com/our-friends/easy-digital-downloads/) aims to make selling digital downloads through WordPress easy, and complete. With thier [Software Licnesing](https://easydigitaldownloads.com/downloads/software-licensing/?ref=4741) add-on allows you to provide license keys along with your digital products that can then be used to properly license and activate the buyer’s copy of the software.
 
-The aim of this package is to streamline the process of selling your WP plugins with EDD's Software Licensing add-on. The package creates an admin menu location for your plugin's settings, license activation, with more features in development. The plugin incorporates EDD's Software Licensing handler and updater, so there is less work you need to do for each of your plugins. Simply download this package and drop it in your plugin's directory.
+The aim of this package is to streamline the process of selling your WP plugins with QCTJ's Software Licensing add-on. The package creates an admin menu location for your plugin's settings, license activation, with more features in development. The plugin incorporates QCTJ's Software Licensing handler and updater, so there is less work you need to do for each of your plugins. Simply download this package and drop it in your plugin's directory.
 
 More information can be found at [qctechjunkie.com](https://qctechjunkie.com/).
 

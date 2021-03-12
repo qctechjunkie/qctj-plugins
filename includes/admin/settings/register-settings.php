@@ -251,10 +251,7 @@ function qctj_get_registered_settings() {
 					'allow_tracking' => array(
 						'id'   => 'allow_tracking',
 						'name' => __( 'Allow Usage Tracking?', 'qctechjunkie-plugins' ),
-						'desc' => sprintf(
-							__( 'Allow QCTechJunkie to anonymously track how this plugin is used and help us make the plugin better. Opt-in to tracking and our newsletter and immediately be emailed a discount to the QCTJ shop, valid towards the <a href="%s" target="_blank">purchase of extensions</a>. No sensitive data is tracked.', 'qctechjunkie-plugins' ),
-							'https://qctechjunkie.com/downloads/?utm_source=' . substr( md5( get_bloginfo( 'name' ) ), 0, 10 ) . '&utm_medium=admin&utm_term=settings&utm_campaign=QCTJUsageTracking'
-						),
+						'desc' => __( 'Allow QCTechJunkie to anonymously track how our plugins are used and help us make them better. Opt-in to tracking and our newsletter today! <strong>No sensitive data is tracked.</strong>', 'qctechjunkie-plugins' ),
 						'type' => 'checkbox',
 					),
 				),

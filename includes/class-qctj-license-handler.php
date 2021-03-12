@@ -252,7 +252,7 @@ class QCTJ_License {
 
 		// Data to send to the API
 		$api_params = array(
-			'edd_action' => 'activate_license',
+			'qctj_action' => 'activate_license',
 			'license'    => $license,
 			'item_name'  => urlencode( $this->item_name ),
 			'url'        => home_url()
@@ -320,7 +320,7 @@ class QCTJ_License {
 
 			// Data to send to the API
 			$api_params = array(
-				'edd_action' => 'deactivate_license',
+				'qctj_action' => 'deactivate_license',
 				'license'    => $this->license,
 				'item_name'  => urlencode( $this->item_name ),
 				'url'        => home_url()
@@ -372,7 +372,7 @@ class QCTJ_License {
 
 		// data to send in our API request
 		$api_params = array(
-			'edd_action'=> 'check_license',
+			'qctj_action'=> 'check_license',
 			'license' 	=> $this->license,
 			'item_name' => urlencode( $this->item_name ),
 			'url'       => home_url()

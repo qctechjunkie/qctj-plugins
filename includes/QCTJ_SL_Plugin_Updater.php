@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
  * Allows plugins to use their own update API.
- * Modified for 3rd party use with the EDD Software License plugin
+ * Modified for 3rd party use with the QCTJ Software License plugin
  * 
  * Modification - Change the class name (required) and file name (optional)
  *
@@ -373,7 +373,7 @@ class QCTJ_SL_Plugin_Updater {
 	public function http_request_args( $args, $url ) {
 
 		$verify_ssl = $this->verify_ssl();
-		if ( strpos( $url, 'https://' ) !== false && strpos( $url, 'edd_action=package_download' ) ) {
+		if ( strpos( $url, 'https://' ) !== false && strpos( $url, 'qctj_action=package_download' ) ) {
 			$args['sslverify'] = $verify_ssl;
 		}
 		return $args;
@@ -430,7 +430,7 @@ class QCTJ_SL_Plugin_Updater {
 		}
 
 		$api_params = array(
-			'edd_action' => 'get_version',
+			'qctj_action' => 'get_version',
 			'license'    => ! empty( $data['license'] ) ? $data['license'] : '',
 			'item_name'  => isset( $data['item_name'] ) ? $data['item_name'] : false,
 			'item_id'    => isset( $data['item_id'] ) ? $data['item_id'] : false,
@@ -498,7 +498,7 @@ class QCTJ_SL_Plugin_Updater {
 		if( false === $version_info ) {
 
 			$api_params = array(
-				'edd_action' => 'get_version',
+				'qctj_action' => 'get_version',
 				'item_name'  => isset( $data['item_name'] ) ? $data['item_name'] : false,
 				'item_id'    => isset( $data['item_id'] ) ? $data['item_id'] : false,
 				'slug'       => $_REQUEST['slug'],

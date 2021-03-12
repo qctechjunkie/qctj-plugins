@@ -5,7 +5,7 @@
  * Description: QCTechJunkie Plugins all under one roof.
  * Author: TechJunkie, LLC
  * Author URI: https://qctechjunkie.com
- * Version: 1.0.0
+ * Version: 1.1.0
  * Text Domain: qctechjunkie-plugins
  *
  * QCTechJunkie Plugins is free software: you can redistribute it and/or modify
@@ -141,11 +141,14 @@ final class QCTechJunkie_Plugins {
 
 		require_once QCTJ_PLUGIN_DIR . 'includes/admin/settings/register-settings.php';
 		$qctj_options = qctj_get_settings();
-
+		
+		require_once QCTJ_PLUGIN_DIR . 'includes/actions.php';
 		require_once QCTJ_PLUGIN_DIR . 'includes/class-qctj-license-handler.php';
 		require_once QCTJ_PLUGIN_DIR . 'includes/formatting.php';
 		require_once QCTJ_PLUGIN_DIR . 'includes/misc-functions.php';
 		require_once QCTJ_PLUGIN_DIR . 'includes/scripts.php';
+		require_once QCTJ_PLUGIN_DIR . 'includes/scripts.php';
+		require_once QCTJ_PLUGIN_DIR . 'includes/admin/tracking.php'; 
 
 		if ( is_admin() ) {
 			require_once QCTJ_PLUGIN_DIR . 'includes/admin/admin-pages.php';

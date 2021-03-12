@@ -1,10 +1,10 @@
-## Contribute To Easy Digital Downloads
+## Contribute To QCTechJunkie's Plugin Package
 
 Community made patches, localisations, bug reports and contributions are always welcome and are crucial to ensure our plugin package for Easy Digital Downloads remains the best for all EDD 3rd party plugin developers.
 
 When contributing please ensure you follow the guidelines below so that we can keep on top of things.
 
-__Please Note:__ GitHub is for bug reports and contributions only - if you have a support question or a request for a customization don't post here, go to our [Support page](https://easydigitaldownloads.com/support/) instead.
+__Please Note:__ GitHub is for bug reports and contributions only - if you have a support question or a request for a customization don't post here, go to our [Support page](https://qctechjunkie.com/contact/) instead.
 
 ## Getting Started
 
@@ -79,7 +79,6 @@ By making a contribution to this project, I certify that:
 ```
 
 # Additional Resources
-* [EDD Developer's API](https://easydigitaldownloads.com/docs/developers-intro-to-easy-digital-downloads/)
 * [General GitHub Documentation](https://help.github.com/)
 * [GitHub Pull Request documentation](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 * [PHPUnit Tests Guide](https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html)
