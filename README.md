@@ -14,7 +14,7 @@ For detailed setup instructions, visit the official [Documentation](https://qcte
 
 1. You can clone the GitHub repository: `https://github.com/qctecjunkie/qctj-plugins.git`
 2. Or download it directly as a ZIP file: `https://github.com/qctechjunkie/qctj-plugins/archive/master.zip`
-3. Or add this package as a submodule: `git submodule add https://github.com/qctecjunkie/qctj-plugins.git qctj-plugins`
+3. Or add this package as a submodule: `git submodule add https://github.com/qctecjunkie/qctj-plugins qctj-plugins`
 
 This will download the latest developer copy of the of our plugin package for Easy Digital Download's Software Licensing add-on.
 
