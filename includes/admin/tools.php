@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @return      void
  */
 function qctj_tools_page() {
-	$active_tab = isset( $_GET['tab'] ) ? $_GET['tab'] : 'general';
+	$active_tab = isset( $_GET['tab'] ) ? $_GET['tab'] : 'system_info';
 ?>
 	<div class="wrap">
 		<h2><?php _e( 'QCTechJunkie Tools', 'qctechjunkie-plugins' ); ?></h2>
@@ -65,7 +65,6 @@ function qctj_tools_page() {
 function qctj_get_tools_tabs() {
 
 	$tabs                  = array();
-	$tabs['general']       = __( 'General', 'qctechjunkie-plugins' );
 	$tabs['system_info']   = __( 'System Info', 'qctechjunkie-plugins' );
 
 	return apply_filters( 'qctj_tools_tabs', $tabs );

@@ -430,7 +430,7 @@ class QCTJ_SL_Plugin_Updater {
 		}
 
 		$api_params = array(
-			'qctj_action' => 'get_version',
+			'edd_action' => 'get_version',
 			'license'    => ! empty( $data['license'] ) ? $data['license'] : '',
 			'item_name'  => isset( $data['item_name'] ) ? $data['item_name'] : false,
 			'item_id'    => isset( $data['item_id'] ) ? $data['item_id'] : false,
@@ -498,7 +498,7 @@ class QCTJ_SL_Plugin_Updater {
 		if( false === $version_info ) {
 
 			$api_params = array(
-				'qctj_action' => 'get_version',
+				'edd_action' => 'get_version',
 				'item_name'  => isset( $data['item_name'] ) ? $data['item_name'] : false,
 				'item_id'    => isset( $data['item_id'] ) ? $data['item_id'] : false,
 				'slug'       => $_REQUEST['slug'],
