@@ -5,7 +5,7 @@
  * Description: QCTechJunkie Plugins all under one roof.
  * Author: TechJunkie, LLC
  * Author URI: https://qctechjunkie.com
- * Version: 1.1.0
+ * Version: 1.2.0
  * Text Domain: qctechjunkie-plugins
  *
  * QCTechJunkie Plugins is free software: you can redistribute it and/or modify
@@ -110,7 +110,7 @@ final class QCTechJunkie_Plugins {
 
 		// Plugin version.
 		if ( ! defined( 'QCTJ_VERSION' ) ) {
-			define( 'QCTJ_VERSION', '1.0.0' );
+			define( 'QCTJ_VERSION', '1.2.0' );
 		}
 
 		// Plugin Folder Path.
